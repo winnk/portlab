@@ -7,12 +7,6 @@ var uglify = require('gulp-uglify');
 var utilities = require('gulp-util');
 var del = require('del');
 var jshint = require('gulp-jshint');
-var browserSync = require('browser-sync').create();
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var plumber = require('gulp-plumber');
-var coffee = require('gulp-coffee');
-var gutil = require('gulp-util');
 var buildProduction = utilities.env.production;
 var lib = require('bower-files')({
   "overrides":{
@@ -21,28 +15,14 @@ var lib = require('bower-files')({
         "less/bootstrap.less",
         "dist/css/bootstrap.css",
         "dist/js/bootstrap.js",
-        "dist/fonts/glyphicons-halflings-regular.eot",
-        "dist/fonts/glyphicons-halflings-regular.svg",
-        "dist/fonts/glyphicons-halflings-regular.ttf",
-        "dist/fonts/glyphicons-halflings-regular.woff",
-        "dist/fonts/glyphicons-halflings-regular.woff2"
       ]
     }
   }
 });
 
-gulp.src('./src/*.ext')
-	.pipe(plumber())
-	.pipe(coffee())
-	.pipe(gulp.dest('./dist'));
-
-  gulp.task('coffee', function() {
-   gulp.src(testfiles)
-      .pipe(coffee())
-      .on('error', gutil.log);
-});
-
-
+var browserSync = require('browser-sync').create();
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('jshint', function() {
   return gulp.src(['js/*.js'])
