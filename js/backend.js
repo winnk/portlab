@@ -3,7 +3,7 @@ var apiPre = "https://api.betterdoctor.com/2016-03-01/doctors?"
 var apiPost = "&location=37.773,-122.413,100&skip=2&limit=10&user_key="
 
 
-// var resource_url = apiPre + issue + apiPost + apiKey; 'https://api.betterdoctor.com/2016-03-01/doctors?specialty_uid=cardiologist&location=or-portland&skip=2&limit=10&user_key=faf8804b327e1667c939d01e9d89bb10' + apiKey;
+  // var resource_url = apiPre + issue + apiPost + apiKey; 'https://api.betterdoctor.com/2016-03-01/doctors?specialty_uid=cardiologist&location=or-portland&skip=2&limit=10&user_key=faf8804b327e1667c939d01e9d89bb10' + apiKey;
 
 function Doctor(){
 }
@@ -26,16 +26,14 @@ function Doctor(){
 //     });
 // };
 
-exports.getDoctors = function(co, displayDoctors) {
+exports.getDoctors = function(issue, displayDoctors) {
   console.log("complaint runs");
- $.get('https://api.betterdoctor.com/2016-03-01/practices?location=or-portland&user_location=37.773%2C-122.413&skip=0&limit=10&user_key='+ apiKey).then(function(response) {
-
-        });
-        displayDoctors(allDocs);
-      })
-      .fail(function(error){
-	      $('#error').text(error.responseJSON.message);
-	    });
+ $.get(apiPre + issue + apiPost + apiKey).then(function(response) {
+    displayDoctors(allDocs);
+    })
+  .fail(function(error){
+	 $('#error').text(error.responseJSON.message);
+  });
 };
 
 exports.docModule = Doctor;

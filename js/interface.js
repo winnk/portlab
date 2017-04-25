@@ -5,11 +5,7 @@ function displayDoctors(docs){
   docs.forEach(function(doc){
     $('.showDocs').append("<a href=https://api.betterdoctor.com/2016-03-01/doctors/" + npi + "?user_key=" + apiKey + ">Doctor: </a>" + doc.title + doc.name + "<br>");
   });
-  }
-
-// // VARIABLE SEARCH STRING"<span><a href=https://api.betterdoctor.com/2016-03-01/doctors/" + npi + "?user_key=faf8804b327e1667c939d01e9d89bb10"
-//
-// // SEARCH BY NPI https://api.betterdoctor.com/2016-03-01/doctors/npi/1992773295?user_key=faf8804b327e1667c939d01e9d89bb10
+};
 
 $(document).ready(function() {
   var currentDocObject = new Doctor();
@@ -18,8 +14,13 @@ $(document).ready(function() {
     event.preventDefault();
     var issue = $('#issue').val;
     $('#issue').val('');
-    console.log(location);
-    currentDocObject.getSpecialtyLocation(issue, displaySpecialtyLocation);
-    }); // end location search
-
+    console.log(issue);
+    currentDocObject.getSpecialtyLocation(issue, displayDoctors);
+    }); // end search
  }); // end ready function
+
+
+
+ // // VARIABLE SEARCH STRING"<span><a href=https://api.betterdoctor.com/2016-03-01/doctors/" + npi + "?user_key=faf8804b327e1667c939d01e9d89bb10"
+ //
+ // // SEARCH BY NPI https://api.betterdoctor.com/2016-03-01/doctors/npi/1992773295?user_key=faf8804b327e1667c939d01e9d89bb10
