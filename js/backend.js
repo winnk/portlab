@@ -28,9 +28,8 @@ function Doctor(){
 //     });
 // };
 
-
-Doctor.prototype.getSpecialtyLocation = function(location, displaySpecialty) {
-  console.log("specialty runs");
+exports.getDoctors = function(co, displayDoctors) {
+  console.log("complaint runs");
  $.get('https://api.betterdoctor.com/2016-03-01/practices?location=or-portland&user_location=37.773%2C-122.413&skip=0&limit=10&user_key='+ apiKey).then(function(response) {
         var allDocs = [];
           response.docs.forEach(function(doc){
@@ -46,7 +45,7 @@ Doctor.prototype.getSpecialtyLocation = function(location, displaySpecialty) {
           docObject.title = doc.title;
           allDocs.push(docObject);
         });
-        displaySpecialtyLocation(allDocs);
+        displayDoctors(allDocs);
       })
       .fail(function(error){
 	      $('#error').text(error.responseJSON.message);
