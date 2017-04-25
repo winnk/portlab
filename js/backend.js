@@ -27,12 +27,12 @@ function Doctor(){
 // };
 
 exports.getDoctors = function(issue, displayDoctors) {
-  console.log("complaint runs");
+  console.log("getDoctor runs");
  $.get(apiPre + issue + apiPost + apiKey).then(function(response) {
-    displayDoctors(allDocs);
-    })
-  .fail(function(error){
-	 $('#error').text(error.responseJSON.message);
+    displayDoctors(issue, response.practices.data.name);
+  })
+   .fail(function(error){
+	  $('#error').text(error.responseJSON.message);
   });
 };
 
