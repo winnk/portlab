@@ -9,11 +9,11 @@ function displayDoctors(issue, doctor){
 
 $(document).ready(function() {
   var currentDocObject = new Doctor();
-  $('#search').submit(function() {
+  $('#symptomSearch').submit(function() {
     console.log("search triggered");
     event.preventDefault();
-    var issue = $('#issue').val;
-    $('#issue').val('');
+    var issue = $('#symptom').val;
+    $('#symptom').val('');
     console.log(issue);
     currentDocObject.getDoctors(issue, displayDoctors);
     }); // end search
