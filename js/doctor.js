@@ -5,17 +5,7 @@ var apiPost = "&location=37.773,-122.413,100&skip=2&limit=10&user_key=";
 function Doctor(){
 }
 
-// exports.getDoctors = function(issue, displayDoctors) {
-//   console.log("getDoctor runs");
-//  $.get(apiPre + issue + apiPost + apiKey).then(function(response) {
-//     displayDoctors(issue, response.data.practices.name);
-//   })
-//    .fail(function(error){
-// 	  $('#error').text(error.responseJSON.message);
-//   });
-// };
-
-exports.getDoctors = function(issue, displayDoctors) {
+Doctor.prototype.getDoctors = function(issue, displayDoctors) {
   console.log("getDoctor runs");
  $.get('https://api.betterdoctor.com/2016-03-01/doctors?specialty_uid=cardiologist&location=or-portland&skip=2&limit=10&user_key=faf8804b327e1667c939d01e9d89bb10').then(function(response) {
     displayDoctors(issue, response.data.practices.name);
@@ -27,6 +17,16 @@ exports.getDoctors = function(issue, displayDoctors) {
 
 exports.docModule = Doctor;
 
+
+// exports.getDoctors = function(issue, displayDoctors) {
+//   console.log("getDoctor runs");
+//  $.get(apiPre + issue + apiPost + apiKey).then(function(response) {
+//     displayDoctors(issue, response.data.practices.name);
+//   })
+//    .fail(function(error){
+// 	  $('#error').text(error.responseJSON.message);
+//   });
+// };
 
 // var resource_url = apiPre + issue + apiPost + apiKey; 'https://api.betterdoctor.com/2016-03-01/doctors?specialty_uid=cardiologist&location=or-portland&skip=2&limit=10&user_key=faf8804b327e1667c939d01e9d89bb10' + apiKey;
 

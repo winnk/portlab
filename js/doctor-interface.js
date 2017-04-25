@@ -8,13 +8,13 @@ function displayDoctors(issue, doctor){
 };
 
 $(document).ready(function() {
-  var currentDocObject = new Doctor();
+  var currentDoc= new Doctor();
   $('#symptomSearch').submit(function() {
     console.log("search triggered");
     event.preventDefault();
     var issue = $('#symptom').val;
     $('#symptom').val('');
     console.log(issue);
-    currentDocObject.getDoctors(issue, displayDoctors);
+    currentDoc.getDoctors(issue, displayDoctors);
     }); // end search
  }); // end ready function
