@@ -1,7 +1,7 @@
 # ConnectUs Application
 ## Demonstration API app connection to betterdoctor.com
 
-#### By _Kaya Winn
+#### By Kaya Winn
 
 ## Description
 A program to search a medical database via the betterdoctor.com API allowing users to locate doctors based symptom search. Additional search by city coming soon.
@@ -9,8 +9,8 @@ A program to search a medical database via the betterdoctor.com API allowing use
 ## Setup, Installation, Requirements
 * [Clone repository]
 * An .env file is required. Create file and include a key containing: `var apiKey = "[ https://developer.betterdoctor.com/ api key]";`
-* In the terminal go to top level of the cloned repo directory:
-* Run these commands:
+
+### In the terminal go to top level of the cloned repo directory run the following:
 * `npm install`  install backend dependencies and packages
 * `bower install` installs frontend dependencies and packages
 * `gulp build` to build application
