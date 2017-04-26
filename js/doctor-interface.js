@@ -4,19 +4,19 @@ var Doctor = require('./../js/doctor.js').doctorModule;
 var currentDoc = new Doctor();
 
 function displayDoctors(doctors) {
-  console.log("displayDoctors run" + doctors);
-  doctors.forEach(function(doctor) {
-    $('#showDocs').append('<span>' + doctor.first_name + '<span><br>');
+  $('#symptom').val(" ");
+  $('#showDocs').empty();
+    doctors.forEach(function(doctor) {
+    $('#showDocs').append('<span>' + doctor.first_name + doctor.last_name'<span><br>');
   });
 };
 
 $(document).ready(function() {
   $('#symptomSearch').submit(function() {
-    console.log("search triggered");
-    event.preventDefault();
-
+    $('#showDocs').empty();
+    var location = $('#location').val();
     var symptom = $('#symptom').val();
-    console.log(symptom + "is symptom entered");
-    currentDoc.getDoctors(symptom, displayDoctors);
-  }); // end search
+    currentDoc.getDoctors(symptom, location, displayDoctors);
+
+    }); // end search
 }); // end ready function
