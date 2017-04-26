@@ -8,8 +8,9 @@ A program to search a medical database via the betterdoctor.com API allowing use
 
 ## Setup, Installation, Requirements
 * [Clone repository]
-* An .env file is required. Create file and include this clode: `var apiKey = "[ https://developer.betterdoctor.com/ api key]";`
-* In the terminal, navigate to the top level of the cloned directory and run:
+* An .env file is required. Create file and include a key containing: `var apiKey = "[ https://developer.betterdoctor.com/ api key]";`
+* In the terminal go to top level of the cloned repo directory:
+* Run these commands:
 * `npm install`  install backend dependencies and packages
 * `bower install` installs frontend dependencies and packages
 * `gulp build` to build application
