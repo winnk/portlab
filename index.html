@@ -16,6 +16,14 @@
       <div class="col-md-8 col-md-offset-2">
         <div class="well">
          <form id="symptomSearch">
+           <label for="city label">Select a city</label>
+           <select class="location" name="location">
+             <option value="op-portland">Portland</option>
+             <option value="wa-seattle">Seattle</option>
+             <option value="ca-San Francisco">San Francisco</option>
+           </select>
+           <br>
+           <br>
           <label for="symptom">Enter your chief complaint:</label>
           <input id="symptom" type="text" required>
           <button class="btn-primary" id="submit">Search</button>

@@ -1,26 +1,38 @@
-
 # ConnectUs Application
 ## Demonstration API app connection to betterdoctor.com
 
 #### By _Kaya Winn
 
 ## Description
-A program to search a medical database via the betterdoctor.comAPI allowing users to locate and see results about doctors by symptom in different areas.
-
-## Specs
-
-|Behavior             |Input        | Output       |
-|---------------------|-------------|--------------|
-||||
-||||
-||||
-
+A program to search a medical database via the betterdoctor.com API allowing users to locate doctors based symptom search. Additional search by city coming soon.
 
 ## Setup, Installation, Requirements
 * [Clone repository]
-* Compile and run
-* In the terminal, navigate to the top level of the cloned directory and run npm install and bower install
-* Run gulp build and gulp serve to view
+* An .env file is required. Create file and include this clode: `var apiKey = "[ https://developer.betterdoctor.com/ api key]";`
+* In the terminal, navigate to the top level of the cloned directory and run:
+* `npm install`  install backend dependencies and packages
+* `bower install` installs frontend dependencies and packages
+* `gulp build` to build application
+* `gulp serve` to view application at http://localhost:4200
+
+## Package Dependencies:
+* npm gulp
+* npm browserify
+* npm source
+* npm gulp-concat
+* npm uglify
+* npm util
+* npm util
+* npm del
+* npm jshint
+* npm gulp-jshint
+* npm gulp-sass
+* npm gulp-sourcemaps
+* npm browser-sync
+* bower jquery
+* bower bootstrap
+* bower moment
+* bower-files
 
 ## Technologies Used
 * JavaScript
@@ -29,7 +41,7 @@ A program to search a medical database via the betterdoctor.comAPI allowing user
 * Gulp
 * Sass
 
-### License
+## License
 
 This project is licensed under the MIT License - [license]
 
