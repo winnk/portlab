@@ -8,7 +8,8 @@ A program to search a medical database via the betterdoctor.com API allowing use
 
 ## Setup, Installation, Requirements
 * [Clone repository]
-* An .env file is required. Create file and include a key containing: `var apiKey = "[ https://developer.betterdoctor.com/ api key]";`
+* An .env file is required. Create file and include a key containing: `var apiKey = "[apikey]"
+*  Sign up for API key at https://developer.betterdoctor.com/
 
 ### In the terminal go to top level of the cloned repo directory run the following:
 * `npm install`  install backend dependencies and packages
@@ -54,6 +55,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 Copyright (c) 2017
 
+[apikey]: https://developer.betterdoctor.com/
 [Clone repository]: https://github.com/winnk/connectUs.git
 [issue]: https://github.com/winnk/connectUs/issues
 [license]: https://opensource.org/licenses/MIT
