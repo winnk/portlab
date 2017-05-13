@@ -15,10 +15,7 @@ A program to search a medical database via the betterdoctor.com API allowing use
 
 ## Screenshots
 
-![screen1](https://cloud.githubusercontent.com/assets/5551534/26029491/0c2f8e98-37eb-11e7-91c1-96b47f28d5c9.JPG)
-![screen2](https://cloud.githubusercontent.com/assets/5551534/26029492/0c2fd560-37eb-11e7-8af8-d18992cdf9df.JPG)
-![screen3](https://cloud.githubusercontent.com/assets/5551534/26029490/0c2e50e6-37eb-11e7-8d31-c97b503dd5e1.JPG)
-![screen4](https://cloud.githubusercontent.com/assets/5551534/26029493/0c31477e-37eb-11e7-9467-257627890b59.JPG)
+<img src="https://cloud.githubusercontent.com/assets/5551534/26029491/0c2f8e98-37eb-11e7-91c1-96b47f28d5c9.JPG" width="23%"></img> <img src="https://cloud.githubusercontent.com/assets/5551534/26029492/0c2fd560-37eb-11e7-8af8-d18992cdf9df.JPG" width="23%"></img> <img src="https://cloud.githubusercontent.com/assets/5551534/26029490/0c2e50e6-37eb-11e7-8d31-c97b503dd5e1.JPG" width="23%"></img> <img src="https://cloud.githubusercontent.com/assets/5551534/26029493/0c31477e-37eb-11e7-9467-257627890b59.JPG" width="23%"></img> 
 
 
 ## Specifications
