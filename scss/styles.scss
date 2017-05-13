@@ -14,6 +14,7 @@
 }
 #profile{
   padding-left: 20px;
+  margin-left: 60px;
 }
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -383,7 +384,7 @@ cta -2
 	margin-right: 7px;
 }
 /***************************************
-contact us
+Search
 ***************************************/
 .space {
     margin-top: 40px;
@@ -393,6 +394,9 @@ contact us
     color: #fff;
     border-radius: 0px;
     padding: 10px 20px;
+}
+#symptomSearch{
+  color: black;
 }
 .br-radius-zero {
     border-radius: 0px;
