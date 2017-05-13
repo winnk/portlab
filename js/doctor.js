@@ -7,14 +7,14 @@ var apiPost = "&user_location=45.5231%2C-122.6765&skip=0&limit=20&user_key=";
 
 function Doctor() {}
 
-Doctor.prototype.getDoctors = function(symptom, location, displayDoctors) {
+Doctor.prototype.getDoctors = function(symptom, location, Display) {
  $.get(apiPre + symptom + apiLocation + location + apiPost + apiKey).then(function(response){
    var result = response.data;
-      displayDoctors(result);
+      Display(result);
       })
      .fail(function(error){
       console.log("failed");
     });
-  }
+  };
 
 exports.doctorModule = Doctor;
