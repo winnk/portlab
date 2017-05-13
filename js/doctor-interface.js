@@ -3,12 +3,14 @@ var Doctor = require('./../js/doctor.js').doctorModule;
 
 var currentDoc = new Doctor();
 
-function displayDoctors(doctors) {
+function displayDoctors(doctors){
   $('#symptom').val();
   $('#showDocs').empty();
     doctors.forEach(function(doctor) {
-    $('#showDocs').append( doctor.first_name + doctor.last_name);
-  });
+      results.forEach(function(doctorDetail){
+        $('showDocs').append("<strong>First Name:</strong> " + doctorDetail.first_name);
+        });
+});
 }
 
 $(document).ready(function() {
@@ -16,8 +18,12 @@ $(document).ready(function() {
     $('#showDocs').empty();
     var location = $('#location').val();
     var symptom = $('#symptom').val();
-      console.log("symptom: " + symptom + "Location: " + location);
-    currentDoc.getDoctors(symptom, location, displayDoctors);
-
+      event.preventDefault();
+    currentDoc.getDoctors(symptom, location, displayDoctors).done(function(results){
+      results.forEach(function(docDetail){
+        console.log("results returned");
+        $('showDocs').append("<strong>First Name:</strong> " + docDetail.firstName);
+      });
+    });
     }); // end search
 }); // end ready function
