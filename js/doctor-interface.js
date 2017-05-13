@@ -7,9 +7,9 @@ function displayDoctors(doctors) {
   $('#symptom').val(" ");
   $('#showDocs').empty();
     doctors.forEach(function(doctor) {
-    $('#showDocs').append('<span>' + doctor.first_name + doctor.last_name'<span><br>');
+    $('#showDocs').append( doctor.first_name + doctor.last_name);
   });
-};
+}
 
 $(document).ready(function() {
   $('#symptomSearch').submit(function() {
