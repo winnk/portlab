@@ -1,4 +1,4 @@
-![ConnectUs][https://github.com/winnk/connectus/img/connetus.gif|alt=octocat]
+![ConnectUs](https://github.com/winnk/connectUs/blob/master/img/connectus.gif)
 
 # ConnectUs - Physician Search
 ## Demonstration API app connection to betterdoctor.com
