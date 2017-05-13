@@ -1,15 +1,27 @@
-# ConnectUs Application
-## Demonstration API app connection to betterdoctor.com
+![ConnectUs][https://github.com/winnk/connectus/img/connetus.gif|alt=octocat]
 
+# ConnectUs - Physician Search
+## Demonstration API app connection to betterdoctor.com
+[![Build Status](https://travis-ci.org/anfederico/Clairvoyant.svg?branch=master)](https://travis-ci.org/anfederico/Clairvoyant)
+![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+[![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 #### By Kaya Winn
 
 ## Description
-A program to search a medical database via the betterdoctor.com API allowing users to locate doctors based symptom search. Additional search by city coming soon.
+A program to search a medical database via the betterdoctor.com API allowing users to locate doctors based symptom search.
+
+## Specifications
+
+| Behavior                   | Input Example     | Output Example    |
+| -------------------------- | -----------------:| -----------------:|
+| API call using city and symptom data  | Portland, cancer | JSON response 200 OK |
+| JSON response object parses to DOM | Portland, cancer| panel results of treating physicians |
 
 ## Setup, Installation, Requirements
 * [Clone repository]
+* Install depencies
+* Sign up for API key at https://developer.betterdoctor.com/
 * An .env file is required. Create file and include a key containing: `var apiKey = "[apikey]"
-*  Sign up for API key at https://developer.betterdoctor.com/
 
 ### In the terminal go to top level of the cloned repo directory run the following:
 * `npm install`  install backend dependencies and packages
@@ -42,6 +54,7 @@ A program to search a medical database via the betterdoctor.com API allowing use
 * Bower
 * Gulp
 * Sass
+* [Better Doctor API](https://developer.betterdoctor.com/)
 
 ## License
 
