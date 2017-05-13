@@ -6,7 +6,7 @@ function Display(result) {
   $('#showDocs').empty();
   result.forEach(function(doc) {
     $('#showDocs').append("<li class='well row'><div class='col-md-2'><img id="docThumb" src =" + doc.profile.image_url +
-      "></div> <div class='col-md-8'><strong>Name:</strong> " + doc.profile.first_name +
+      "></div> <div id="profile" class='col-md-8'><strong>Name:</strong> " + doc.profile.first_name +
       " " + doc.profile.last_name + ", " + doc.profile.title +
       "<br /> <strong>Specialty:</strong> " + doc.specialties[0].name +
       "<br><strong>Practice:</strong> " + doc.practices[0].name +
