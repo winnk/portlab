@@ -4,7 +4,7 @@ var Doctor = require('./../js/doctor.js').doctorModule;
 var currentDoc = new Doctor();
 
 function displayDoctors(doctors) {
-  $('#symptom').val(" ");
+  $('#symptom').val();
   $('#showDocs').empty();
     doctors.forEach(function(doctor) {
     $('#showDocs').append( doctor.first_name + doctor.last_name);
@@ -16,6 +16,7 @@ $(document).ready(function() {
     $('#showDocs').empty();
     var location = $('#location').val();
     var symptom = $('#symptom').val();
+      console.log("symptom: " + symptom + "Location: " + location);
     currentDoc.getDoctors(symptom, location, displayDoctors);
 
     }); // end search

@@ -8,7 +8,8 @@ function Doctor() {}
 
 Doctor.prototype.getDoctors = function(symptom, location, displayDoctors) {
   console.log("getDoctor runs");
-  $.get(apiPre + symptom + apiLocation + location + apiPost + apiKey ).then(function(response) {
+  console.log("api string is: " + apiPre + symptom + apiLocation + location + apiPost + apiKey);
+  $.get(apiPre + symptom + apiLocation + location + apiPost + apiKey).then(function(response) {
       var doctors = [];
       response.data.forEach(function(doctor) {
         var docObject = {};
@@ -18,6 +19,7 @@ Doctor.prototype.getDoctors = function(symptom, location, displayDoctors) {
         doctors.push(docObject);
       });
        displayDoctors(doctors);
+       console.log(doctors);
     })
     .fail(function(error) {
       $('#error').text(error.responseJSON.message);
