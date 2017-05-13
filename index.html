@@ -1,44 +1,50 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="build/css/vendor.css">
-    <link rel="stylesheet" href="build/css/styles.css">
-    <script type="text/javascript" src="build/js/vendor.min.js"></script>
-    <script type="text/javascript" src="build/js/app.js"></script>
-    <title>ConnectUs</title>
-  </head>
-  <body>
-    <div class="container">
-     <div class="jumbotron-small" id="jumbotron">
+
+<head>
+  <link rel="stylesheet" href="build/css/vendor.css">
+  <link rel="stylesheet" href="build/css/styles.css">
+  <script type="text/javascript" src="build/js/vendor.min.js"></script>
+  <script type="text/javascript" src="build/js/app.js"></script>
+  <title>ConnectUs</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron-small" id="jumbotron">
       <h1 class="jumboTitle">ConnectUs Physician Search</h1>
-     </div>
+    </div>
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <div class="well">
-         <form id="symptomSearch">
-           <label for="city label">Select a city</label>
-           <select class="location" name="location" id="location">
+          <form id="symptomSearch">
+            <label for="city label">Select a city</label>
+            <select class="location" name="location" id="location">
              <option value="or-portland">Portland</option>
              <option value="wa-seattle">Seattle</option>
              <option value="ca-sacramento">San Francisco</option>
            </select>
-           <br>
-           <br>
-          <label for="symptom">Enter your chief complaint:</label>
-          <input id="symptom" type="text" required>
-          <button class="btn-primary" type="submit">Search</button>
-         </form>
-         <div id="error"></div>
-        </div> <!-- end well -->
-      </div> <!-- end col -->
-    <hr>
+            <br>
+            <br>
+            <label for="symptom">Enter your chief complaint:</label>
+            <input id="symptom" type="text" required>
+            <button class="btn-primary" type="submit">Search</button>
+          </form>
+          <div id="error"></div>
+        </div>
+        <!-- end well -->
+      </div>
+      <!-- end col -->
+      <hr>
       <div class="col-md-10 col-md-offset-2">
         <h2>Search Results</h2>
-          <ul id="showDocs">
+        <ul id="showDocs">
+        </ul>
+        <hr>
+      </div>
+      <!-- end col-md-8 -->
+    </div>
+    <!-- end row -->
+</body>
 
-          </ul>
-          <hr>
-        </div> <!-- end col-md-8 -->
-    </div> <!-- end row -->
-  </body>
 </html>
