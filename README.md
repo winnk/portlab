@@ -1,5 +1,5 @@
-![portlab](https://user-images.githubusercontent.com/5551534/28378557-6d3ee3ce-6c65-11e7-93bf-e49ca2cd7527.jpeg)
 
+![portlab](https://user-images.githubusercontent.com/5551534/28378999-033000d8-6c67-11e7-88b3-2ebba4e95009.png)
 
  ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)  [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
