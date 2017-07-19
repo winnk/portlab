@@ -1,5 +1,5 @@
 {
-  "name": "connect-us",
+  "name": "portlab",
   "version": "1.0.0",
   "description": "A program to search a medical database via the betterdoctor.comAPI allowing users to locate and see results about doctors by symptom in different areas.",
   "main": "gulpfile.js",
@@ -22,17 +22,30 @@
   },
   "devDependencies": {
     "browser-sync": "^2.18.8",
+    "browserify": "^14.4.0",
     "coffee": "^3.3.0",
+    "gulp": "^3.9.1",
     "gulp-coffee": "^2.3.4",
     "gulp-concat": "^2.6.1",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
-    "gulp-watch": "^4.3.11"
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kaya Winn",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winnk/portlab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/winnk/portlab/issues"
+  },
+  "homepage": "https://github.com/winnk/portlab#readme"
 }
